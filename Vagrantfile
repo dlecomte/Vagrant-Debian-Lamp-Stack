@@ -29,7 +29,7 @@
 
     # Define VM box to use
     config.vm.box = "Debian Lamp"
-    config.vm.box_url = "/vagrant/debian-7.5.0-amd64_virtualbox.box"
+    config.vm.box_url = "/vagrant/debian-7.4.0-amd64_virtualbox.box"
 
     # Set share folder
     config.vm.synced_folder "/Perso/www/" + project_name , "/var/www/" + project_name + "/", :mount_options => ["dmode=777", "fmode=666"]
