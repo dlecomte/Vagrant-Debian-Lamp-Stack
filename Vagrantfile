@@ -6,10 +6,10 @@
 
   # IP Address for the host only network, change it to anything you like
   # but please keep it within the IPv4 private network range
-  ip_address = "192.168.0.100"
+  ip_address = "192.168.55.55"
 
   # The project name is base for directories, hostname and alike
-  project_name = "festi"
+  project_name = "demo"
 
   # MySQL and PostgreSQL password - feel free to change it to something
   # more secure (Note: Changing this will require you to update the index.php example file)
@@ -32,7 +32,7 @@
     config.vm.box_url = "/vagrant/debian-7.4.0-amd64_virtualbox.box"
 
     # Set share folder
-    config.vm.synced_folder "/Perso/www/" + project_name , "/var/www/" + project_name + "/", :mount_options => ["dmode=777", "fmode=666"]
+    config.vm.synced_folder "/www/" + project_name , "/var/www/" + project_name + "/", :mount_options => ["dmode=777", "fmode=666"]
 
     # Use hostonly network with a static IP Address and enable
     # hostmanager so we can have a custom domain for the server
@@ -59,7 +59,7 @@
           :name           => project_name,
 
           # Name of MySQL database that should be created
-          :db_name        => "festi",
+          :db_name        => "demo",
 
           # Server name and alias(es) for Apache vhost
           :server_name    => project_name + ".local",
