@@ -3,7 +3,7 @@ source "https://api.berkshelf.com"
 cookbook 'apache2'
 cookbook 'apt'
 cookbook 'build-essential'
-cookbook 'dotdeb', git: 'git://github.com/tomcoonen/chef-dotdeb.git'
+cookbook 'dotdeb', git: 'https://github.com/GeBeater/dotdeb-cookbook.git'
 cookbook 'memcached'
 cookbook 'mysql'
 cookbook 'openssl'
