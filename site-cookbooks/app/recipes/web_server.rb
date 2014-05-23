@@ -14,7 +14,7 @@ include_recipe "apache2::mod_ssl"
 
 # Install PHP
 include_recipe "dotdeb"
-include_recipe "dotdeb::php54"
+include_recipe "app::php54"
 include_recipe "php"
 
 # Install PHP5 packages
